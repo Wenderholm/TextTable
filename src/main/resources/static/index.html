@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Table generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+    <div class="container">
+        <h1>TABLE GENERATOR</h1>
+        <form method="post" action="/generate" class="table-form">
+            <label for="headers"> Headers: </label>
+            <input name="headers" id="headers" placeholder="Header1;Header2;Header3">
+            <label for="data"> Date: </label>
+            <textarea name="data" id="data" rows="10" cols="100" placeholder="Text1;Text2;Text3"></textarea>
+            <button>Generate</button>
+        </form>
+    </div>
 </body>
 </html>

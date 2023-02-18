@@ -1,2 +1,11 @@
-package com.example.postmethodtexttable;public class TableGeneratorService {
+package com.example.postmethodtexttable;
+
+import com.github.freva.asciitable.AsciiTable;
+
+public class TableGeneratorService {
+    public static final String DATA_SEPARATOR = ";";
+
+    public static String getTextTable(String[] headers, String[][]data){
+        return AsciiTable.getTable(headers,data);
+    }
 }
